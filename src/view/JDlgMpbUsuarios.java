@@ -25,7 +25,46 @@ public class JDlgMpbUsuarios extends javax.swing.JDialog {
         jFmtDataDeNascimento.setEnabled(false);
         jChbAtivo.setEnabled(false);
         jCboNivel.setEnabled(false);
+        jCboNivel.setEnabled(false);
+        jBtnCancelar.setEnabled(false);
+        jBtnConfirmar.setEnabled(false);
         jPwfSenha.setEnabled(false);
+    }
+    
+    public void habilitar(){
+            jTxtCodigo.setEnabled(true);
+        jTxtApelido.setEnabled(true);
+        jTxtNome.setEnabled(true);
+        jFmtCPF.setEnabled(true);
+        jFmtDataDeNascimento.setEnabled(true);
+        jChbAtivo.setEnabled(true);
+        jCboNivel.setEnabled(true);
+        jCboNivel.setEnabled(true);
+        jBtnCancelar.setEnabled(true);
+        jBtnConfirmar.setEnabled(true);  
+        jPwfSenha.setEnabled(true);// TODO add your handling code here:
+        jBtnIncluir.setEnabled(false); 
+        jBtnExcluir.setEnabled(false);
+        jBtnPesquisar.setEnabled(false);
+        jBtnAlterar.setEnabled(false);
+                }
+    
+    public void desabilitar(){
+            jTxtCodigo.setEnabled(false);
+        jTxtApelido.setEnabled(false);
+        jTxtNome.setEnabled(false);
+        jFmtCPF.setEnabled(false);
+        jFmtDataDeNascimento.setEnabled(false);
+        jChbAtivo.setEnabled(false);
+        jCboNivel.setEnabled(false);
+        jCboNivel.setEnabled(false);
+        jBtnCancelar.setEnabled(false);
+        jBtnConfirmar.setEnabled(false);  
+        jPwfSenha.setEnabled(false); 
+        jBtnIncluir.setEnabled(true);
+        jBtnExcluir.setEnabled(true);
+        jBtnPesquisar.setEnabled(true);
+        jBtnAlterar.setEnabled(true);
     }
 
     /**
@@ -109,6 +148,7 @@ public class JDlgMpbUsuarios extends javax.swing.JDialog {
 
         jChbAtivo.setText("Ativo");
 
+        jBtnIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
         jBtnIncluir.setText("Incluir");
         jBtnIncluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,10 +156,18 @@ public class JDlgMpbUsuarios extends javax.swing.JDialog {
             }
         });
 
+        jBtnAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
         jBtnAlterar.setText("Alterar");
+        jBtnAlterar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnAlterarActionPerformed(evt);
+            }
+        });
 
+        jBtnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
         jBtnExcluir.setText("Excluir");
 
+        jBtnConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gravar.png"))); // NOI18N
         jBtnConfirmar.setText("Confirmar");
         jBtnConfirmar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -127,6 +175,7 @@ public class JDlgMpbUsuarios extends javax.swing.JDialog {
             }
         });
 
+        jBtnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
         jBtnCancelar.setText("Cancelar");
         jBtnCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -134,6 +183,7 @@ public class JDlgMpbUsuarios extends javax.swing.JDialog {
             }
         });
 
+        jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
         jBtnPesquisar.setText("Pesquisar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -235,10 +285,10 @@ public class JDlgMpbUsuarios extends javax.swing.JDialog {
                     .addComponent(jBtnIncluir)
                     .addComponent(jBtnAlterar)
                     .addComponent(jBtnExcluir)
-                    .addComponent(jBtnConfirmar)
                     .addComponent(jBtnCancelar)
-                    .addComponent(jBtnPesquisar))
-                .addContainerGap(47, Short.MAX_VALUE))
+                    .addComponent(jBtnPesquisar)
+                    .addComponent(jBtnConfirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(55, Short.MAX_VALUE))
         );
 
         pack();
@@ -261,20 +311,24 @@ public class JDlgMpbUsuarios extends javax.swing.JDialog {
     }//GEN-LAST:event_jPwfSenhaActionPerformed
 
     private void jBtnIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluirActionPerformed
-        // TODO add your handling code here:
+  habilitar();
     }//GEN-LAST:event_jBtnIncluirActionPerformed
 
     private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
-        // TODO add your handling code here:
+desabilitar();        // TODO add your handling code here:
     }//GEN-LAST:event_jBtnConfirmarActionPerformed
 
     private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed
-        // TODO add your handling code here:
+desabilitar();        // TODO add your handling code here:
     }//GEN-LAST:event_jBtnCancelarActionPerformed
 
     private void jFmtCPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFmtCPFActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jFmtCPFActionPerformed
+
+    private void jBtnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterarActionPerformed
+habilitar();        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnAlterarActionPerformed
 
     /**
      * @param args the command line arguments
