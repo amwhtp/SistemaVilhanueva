@@ -139,13 +139,15 @@
                   <Component id="jChbAtivo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jBtnIncluir" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtnAlterar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtnExcluir" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtnCancelar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtnPesquisar" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jBtnConfirmar" alignment="1" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jBtnIncluir" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jBtnAlterar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jBtnExcluir" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jBtnCancelar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jBtnPesquisar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
               <EmptySpace pref="55" max="32767" attributes="0"/>
           </Group>
@@ -267,6 +269,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Excluir"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnExcluirActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBtnConfirmar">
       <Properties>
@@ -297,6 +302,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Pesquisar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnPesquisarActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
