@@ -334,7 +334,7 @@ habilitar();        // TODO add your handling code here:
     }//GEN-LAST:event_jBtnAlterarActionPerformed
 
     private void jBtnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisarActionPerformed
-        JOptionPane.showInputDialog(null, "Entre com o código do usuário");
+        JOptionPane.showInputDialog(null, "Entre com o código do usuário");     
         // TODO add your handling code here:
 
     }//GEN-LAST:event_jBtnPesquisarActionPerformed
