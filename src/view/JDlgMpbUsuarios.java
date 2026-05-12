@@ -4,6 +4,7 @@
  */
 package view;
 
+import bean.MpvUsuarios;
 import javax.swing.JOptionPane;
 
 /**
@@ -318,7 +319,9 @@ public class JDlgMpbUsuarios extends javax.swing.JDialog {
     }//GEN-LAST:event_jBtnIncluirActionPerformed
 
     private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
-desabilitar();        // TODO add your handling code here:
+// TODO add your handling code here:
+    MpvUsuarios usuario = new MpvUsuarios();
+    desabilitar();
     }//GEN-LAST:event_jBtnConfirmarActionPerformed
 
     private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed

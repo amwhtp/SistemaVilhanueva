@@ -11,8 +11,7 @@ import java.util.Date;
  * @author u04730809157
  */
 public class MpvUsuarios {
-
-    /**
+     /**
      * @return the mpvIdUsuarios
      */
     public int getMpvIdUsuarios() {
